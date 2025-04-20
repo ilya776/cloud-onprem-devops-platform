@@ -11,3 +11,13 @@ module "eks" {
   vpc_id          = module.vpc.vpc_id
   private_subnets = module.vpc.private_subnets
 }
+
+module "bastion" {
+  source            = "./aws-bastion"
+  vpc_id            = module.vpc.vpc_id
+  public_subnet_id  = module.vpc.public_subnets[0]
+  my_ip             = "193.109.145.16/32"
+}
+provider "aws" {
+  region = "us-east-1"
+}

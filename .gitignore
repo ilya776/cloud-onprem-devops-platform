@@ -27,3 +27,4 @@ charts/
 # CI/CD
 .env
 .secrets
+.terraform/

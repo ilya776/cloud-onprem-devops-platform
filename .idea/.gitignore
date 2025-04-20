@@ -1,8 +1,27 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+
+# Logs
+*.log
+
+# Kubernetes
+*.yaml~
+.kube/
+
+# Helm
+charts/
+*.tgz
+
+# CI/CD
+.env
+.secrets

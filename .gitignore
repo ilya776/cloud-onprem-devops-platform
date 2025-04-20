@@ -28,3 +28,4 @@ charts/
 .env
 .secrets
 .terraform/
+.terraform/

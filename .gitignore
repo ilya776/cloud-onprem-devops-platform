@@ -1,0 +1,29 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+crash.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+
+# Logs
+*.log
+
+# Kubernetes
+*.yaml~
+.kube/
+
+# Helm
+charts/
+*.tgz
+
+# CI/CD
+.env
+.secrets
